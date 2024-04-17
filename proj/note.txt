@@ -1,0 +1,22 @@
+
+Helpful commands:
+
+script -q /dev/null iperf3 -c ip -t 120 | tee tcp_wired.txt
+mkfile -n 100m largo2.txt
+
+Measure data speed through pipe.
+pv
+tqdm
+iperf
+------------------------------------------------iperf
+iperf3 -s
+iperf3 -c 10.0.0.81 -t 120
+iperf3 -c 10.0.0.50 -t 120
+------------------------------------------------iperf
+scp <>:/dev/zero ./empty.txt
+cat /dev/zero | pv > /dev/null
+sudo ip link set wlan0 down
+sudo ip link set wlan0 up
+iwgetid
+iwconfig
+sudo apt install dhcpcd5
